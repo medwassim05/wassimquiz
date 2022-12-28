@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="home-box custom-box ">
+        <h3>INSTRUCTION</h3>
+        <p>Totale nombre de question <span class="total-question">5</span></p>
+        <button type="button" class="btn" onclick="goToquiz()">Start Quiz</button>
+    </div>
+    <div class="quiz-box custom-box hide">
+         <div class="question-number">
+            
+         </div>
+         <div class="question-text">
+           
+         </div>
+         <div class="option-container">
+           
+
+         </div>
+         <div class="next-button">
+            <button type="button" class="btn" onclick="next()">Suivant</button>
+         </div>
+         <div class="ansewr-indicateur">
+            
+
+         </div>
+    </div>
+    <div class="result-box custom-box  hide">
+        <h1>Resultat du Quiz</h1>
+        <table>
+            <tr>
+                <td>Total Question</td>
+                <td><span class="question-totale"></span></td>
+            </tr>
+            <tr>
+                <td>Attempt</td>
+                <td><span class="esseye"></span></td>
+            </tr>
+            <tr>
+                <td>Repense juste</td>
+                <td><span class="juste"></span></td>
+            </tr>
+            <tr>
+                <td>Repense fausse</td>
+                <td><span class="faux"></span></td>
+            </tr>
+            <tr>
+                <td>Pourcentage</td>
+                <td><span class="Pourcentage"></span></td>
+            </tr>
+            <tr>
+                <td>Le score Totale</td>
+                <td><span class="total-score"></span></td>
+            </tr>
+        </table>
+        <button type="button" class="btn" onclick="tryagain()">Essayer à nouveau</button>
+        <button type="button" class="btn" onclick="Gotohome()">Go to Home</button>
+
+    </div>
+<script src="js/question.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
